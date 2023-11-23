@@ -1,0 +1,167 @@
+/* CSS FOR MEDIA QUERY */
+.navmedia{
+    background-color: white;
+    display: none;
+}
+.navmedia-2{
+    display: none;
+}
+.navm{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/* ADDED MEDIA QUERY TO MAKE NAV BAR AND CARDS RESPONSIVE */
+@media screen and (max-width:480px){
+
+    nav>.websitenav{
+        display: none;
+    }
+    nav>.navmedia{
+        display: block;
+        padding-bottom: 20px;
+    }
+    nav>.navmedia>.navm>.navsearch-bar{
+        width: 50vw;
+    }
+    nav>.navmedia>.navm>.logo{
+        margin-left: 2px;
+    }
+    nav>.navmedia>.navm-2>div>p{
+        font-size: 14px;
+        margin-left: 18px;
+    }
+    nav>.navmedia>.navm-2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    section>.hero-section{
+        margin-inline: auto;
+        margin-top: 10px;
+    }
+    section>.section-scrollx{
+        margin-left: 10px;
+    }
+    section>.categories-grid{
+        margin-left: 10px;
+    }
+    section>.dailyitemscategory1{
+        margin-left: 12px;
+    }
+    section>.dailyitemscategory1>.card-list>.card{
+        min-width: 40vw;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:700px){
+
+    nav>.websitenav{
+        display: none;
+    }
+    nav>.navmedia{
+        display: none;
+    }
+    nav>.navmedia-2{
+        display: block;
+        padding-bottom: 20px;
+        background-color: white;
+    }
+    nav>.navmedia-2>.navm>.logo{
+        margin-left: 8px;
+    }
+    nav>.navmedia-2>.navm>.navsearch-bar{
+        width: 60vw;
+        margin-left: 10px;
+    }
+    nav>.navmedia-2>.navm-2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav>.navmedia-2>.navm-2>.loginbutton{
+        margin-left: 10px;
+    }
+    section>.hero-section{
+        margin-inline: auto;
+        margin-top: 10px;
+    }
+    section>.section-scrollx{
+        margin-left: 20px;
+    }
+    section>.categories-grid{
+        margin-left: 20px;
+    }
+    section>.dailyitemscategory1{
+        margin-left: 25px;
+    }
+    section>.dailyitemscategory1>.card-list>.card{
+        min-width: 30vw;
+        min-height: 52vh;
+    }
+}
+
+@media screen and (min-width:701px) and (max-width:885px){
+
+    nav>.websitenav>.navsearch-bar{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 25vw;
+    }
+    nav>.websitenav>.navleft1>p{
+        font-size: 14px;
+        margin: 5px;
+    }
+    nav>.websitenav>.loginbutton{
+        margin-right: 0px;
+    }
+    nav>.websitenav>.loginbutton>button{
+        font-size: 16px;
+    }
+    nav>.websitenav>.cartbutton>button{
+        margin-left: 0px;
+        margin-right: 5px;
+        font-size: 14px;
+    }
+}
+@media screen and (min-width:886px) and (max-width:1045px){
+
+    nav>.websitenav>.navsearch-bar{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 26vw;
+    }
+    nav>.websitenav>.navleft1>p{
+        font-size: 14px;
+        margin: 9px;
+    }
+    nav>.websitenav>.loginbutton{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (min-width:701px) and (max-width:900px){
+
+    section>.dailyitemscategory1>.card-list>.card{
+        min-width: 20vw;
+        height: 48vh
+    }
+}
+
+@media screen and (min-width:900px) and (max-width:1045px){
+
+    section>.dailyitemscategory1>.card-list>.card{
+        min-width: 18vw;
+        min-height: 50vh
+    }
+}
+@media screen and (min-width:1046px) and (max-width:1116px){
+
+    section>.dailyitemscategory1>.card-list>.card{
+        min-width: 17vw;
+        min-height: 52vh
+    }
+}
